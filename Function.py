@@ -43,12 +43,6 @@
 # c=Cat()
 # c.sound()
 
-# class BankAccount:
-#     def__init__(self,owner,balance):
-#         self.owner=owner
-#         self.__balance=balance
-#     def deposit(self,amount):
-#         self.__balance +=amount
 
 # class Student:
 #     def __init__(self):
@@ -76,24 +70,59 @@
 # s1.display_details()
 
 
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+# class Circle:
+#     def __init__(self, radius):
+#         self.radius = radius
 
-    def area(self):
-        return 3.14 * self.radius * self.radius
+#     def area(self):
+#         return 3.14 * self.radius * self.radius
 
-    def circumference(self):
-        return 2 * 3.14 * self.radius
+#     def circumference(self):
+#         return 2 * 3.14 * self.radius
 
 
-# Create object
-r = float(input("Enter radius of the circle: "))
-c1 = Circle(r)
 
-# Display results
-print("Area of Circle:", c1.area())
-print("Circumference of Circle:", c1.circumference())
+# r = float(input("Enter radius of the circle: "))
+# c1 = Circle(r)
+
+
+# print("Area of Circle:", c1.area())
+# print("Circumference of Circle:", c1.circumference())
+
+
+class GrandFather:
+    def FfShow(self):
+        print("Grand father")
+class Father(GrandFather):
+    def show_Father(self):
+        print("Father")
+class Son(Father):
+    def Show_Son(self):
+        print("son")
+s=Son()
+s.Show()
+s.show_Father()
+s.Show_Son()
+
+class Animal:
+    def sound(self):
+        print("Any sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Bho BHo")
+
+class Cat(Animal):
+    def sound(self):
+        print("Meo Meo")
+d1=Dog()
+d1.sound()
+c1=Cat()
+c1.sound() 
+        
+
+
+
 
 
 
